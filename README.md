@@ -20,9 +20,44 @@ it, simply add the following line to your Podfile:
 pod 'YWMoyaPlugins'
 ```
 
-## Author
+## How to use
 
-dyang@micmd.com, youv686@gmail.com
+**YWMoyaLogPlugin**
+
+```swift
+    let provider = MoyaProvider(plugins: [YWLogPlugin()])
+    ... more code
+```
+When request some info, you can see some log info in Xcode. 🎉
+
+**YWAlertManagerUIPlugin**
+
+```swift
+    class NetworkAlertUiManager: TipManagerUIDelegate {
+      
+      func alertProgress() {
+        ... UI code
+      }
+      func hideProgressAlert() {
+        ... UI code
+      }
+      func alertMessageSuccess(response: Response) {
+        ... UI code
+      }
+      func alertMessageFailure(moyaError: MoyaError) {
+        ... UI code
+      }
+    }
+
+    let alertManagerPlugin = YWAlertManagerPlugin()
+    alertManagerPlugin.tipDelegate = NetworkAlertUiManager()
+    let provider = MoyaProvider(plugins: [alertManagerPlugin])
+    ... more code
+```
+
+After the plug-in is set up, you can implement some actions in the corresponding callback.
+
+ It is commonly used in scenarios such as delay notification, response message notification, and network error notification.
 
 ## License
 

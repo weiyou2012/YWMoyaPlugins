@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YWMoyaPlugins'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YWMoyaPlugins.'
+  s.summary          = 'Some of the Moya plugins used in development.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  Some of the development of the use of Moya plug-in, easy to print some request response information, or easy to deal with the Internet rhetoric and response information reminders.
 
-  s.homepage         = 'https://github.com/dyang@micmd.com/YWMoyaPlugins'
+  s.homepage         = 'https://github.com/weiyou2012/YWMoyaPlugins'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'dyang@micmd.com' => 'youv686@gmail.com' }
-  s.source           = { :git => 'https://github.com/dyang@micmd.com/YWMoyaPlugins.git', :tag => s.version.to_s }
+  s.author           = { 'weiyou' => 'youv686@gmail.com' }
+  s.source           = { :git => 'https://github.com/weiyou2012/YWMoyaPlugins.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'YWMoyaPlugins/Classes/**/*'
   
@@ -37,6 +36,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
+  s.dependency "Moya", '~> 14.0.0'
 end
