@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
   Some of the development of the use of Moya plugin, easy to print some request response information, or easy to deal with the Internet rhetoric and response information reminders.
-
+  DESC
+  
   s.homepage         = 'https://github.com/weiyou2012/YWMoyaPlugins'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -37,5 +38,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'Foundation'
-  s.dependency "Moya", '~> 14.0.0'
+  s.dependency 'Moya', '~> 14.0.0'
 end
