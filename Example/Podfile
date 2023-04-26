@@ -1,0 +1,6 @@
+use_frameworks!
+target 'YWMoyaPlugins_Tests' do
+  pod 'YWMoyaPlugins', :path => '../'
+  
+  
+end
