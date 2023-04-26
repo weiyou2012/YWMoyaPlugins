@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  Some of the development of the use of Moya plug-in, easy to print some request response information, or easy to deal with the Internet rhetoric and response information reminders.
+  Some of the development of the use of Moya plugin, easy to print some request response information, or easy to deal with the Internet rhetoric and response information reminders.
 
   s.homepage         = 'https://github.com/weiyou2012/YWMoyaPlugins'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
